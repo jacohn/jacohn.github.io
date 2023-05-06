@@ -1,4 +1,418 @@
-<html>
-    <h1> Jonathan's Portfolio Under Construction</h1>
-    // <img src=./cohn.jpeg />
-         </html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jonathan Cohn</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  </head>
+  <body>
+
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+   <nav class="navbar fixed-top navbar-expand-md bg-body-tertiary bg-dark" >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">JC</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <!--
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          -->
+          <li class="nav-item">
+            <a class="nav-link" href="https://docs.google.com/document/d/1vp3ox-7yOsxSnCvc9Ve6j_kfGPiPhWngtPL_357pS8Q/edit?usp=sharing"target="_blank">Resume</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Portfolios
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="https://github.com/jacohn/AcademicResearch">Writing</a></li>
+              <li><a class="dropdown-item" href="https://scholar.google.com/citations?user=kAl8J9oAAAAJ&hl=en">Google Scholar</a></li>
+              <li><a class="dropdown-item" href="https://github.com/jacohn/InstructionalDesign">Teaching</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="https://github.com/jacohn/MIT_Coursework">Fullstack</a></li>
+            </ul>
+          </li>
+          
+          
+        </ul>
+        <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+            <li class="nav-item col-6 col-lg-auto">
+              <a class="nav-link py-2 px-0 px-lg-2" href="https://github.com/jacohn" target="_blank" rel="noopener">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="navbar-nav-svg" viewBox="0 0 512 499.36" role="img"><title>GitHub</title><path fill="currentColor" fill-rule="evenodd" d="M256 0C114.64 0 0 114.61 0 256c0 113.09 73.34 209 175.08 242.9 12.8 2.35 17.47-5.56 17.47-12.34 0-6.08-.22-22.18-.35-43.54-71.2 15.49-86.2-34.34-86.2-34.34-11.64-29.57-28.42-37.45-28.42-37.45-23.27-15.84 1.73-15.55 1.73-15.55 25.69 1.81 39.21 26.38 39.21 26.38 22.84 39.12 59.92 27.82 74.5 21.27 2.33-16.54 8.94-27.82 16.25-34.22-56.84-6.43-116.6-28.43-116.6-126.49 0-27.95 10-50.8 26.35-68.69-2.63-6.48-11.42-32.5 2.51-67.75 0 0 21.49-6.88 70.4 26.24a242.65 242.65 0 0 1 128.18 0c48.87-33.13 70.33-26.24 70.33-26.24 14 35.25 5.18 61.27 2.55 67.75 16.41 17.9 26.31 40.75 26.31 68.69 0 98.35-59.85 120-116.88 126.32 9.19 7.9 17.38 23.53 17.38 47.41 0 34.22-.31 61.83-.31 70.23 0 6.85 4.61 14.81 17.6 12.31C438.72 464.97 512 369.08 512 256.02 512 114.62 397.37 0 256 0z"></path></svg>
+                <small class="d-lg-none ms-2">GitHub</small>
+              </a>
+            </li>
+            <li class="nav-item col-6 col-lg-auto">
+              <a class="nav-link py-2 px-0 px-lg-2" href="https://www.linkedin.com/in/jonathan-cohn-phd/" target="_blank" rel="noopener">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                  </svg>
+                  <small class="d-lg-none ms-2">linkedin</small>
+              </a>
+            </li>
+            <li class="nav-item col-6 col-lg-auto">
+              <a class="nav-link py-2 px-0 px-lg-2" href="mailto:jacohn@gmail.com" target="_blank" rel="noopener">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                  </svg>
+                <small class="d-lg-none ms-2">Open Collective</small>
+              </a>
+            </li>
+  
+            <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
+              <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-white"></div>
+              <hr class="d-lg-none my-2 text-white-50">
+            </li>
+            
+  
+            
+  
+
+          </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container col-xxl-8 px-2 py-3">
+    <div class="row flex-lg-row-reverse align-items-center g-2 py-3">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="./images/bpic.jpeg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+      </div>
+
+      <!-- first book hero-->
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Dr. Jonathan Cohn Tech Writer| Developer| Academic</h1>
+     
+        <p class="lead">Tech/UX Writer with 15 years of experience as an English and Digital Culture professor. Published author of newspaper articles, interviews, 2 books, a dozen academic articles, and many conference presentations. Passionate about building a more creative, collaborative, ethical, and interesting tech culture. </p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2" onclick=window.location.href="https://github.com/jacohn">GitHub Repos</button>
+          
+          
+          
+          <button type="button" class="btn btn-outline-secondary btn-lg px-4" onclick="window.location.href='https://scholar.google.com/citations?user=kAl8J9oAAAAJ&hl=en'">Google Scholar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--second book hero-->
+  <div class="container col-xxl-8 px-3 py-4">
+    <div class="row flex-lg-row-reverse align-items-center g-2 py-3">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <iframe type="text/html" sandbox="allow-scripts allow-same-origin allow-popups" width="500" height="803" frameborder="0" allowfullscreen style="max-width:100%" src="https://read.amazon.com/kp/card?asin=B07N85TJN7&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_XN81JV0AMSD3DVYE72GY" ></iframe>
+        <!--
+            <img src="./images/burdenchoice.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+        -->
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3"><i>"Algorithmic recommendations aren’t politically neutral. But, as Cohn details in this illuminating book, nor is their power absolute. The Burden of Choice is a primer on algorithmic dissidence, couched in a history of computational decision making.</i>"</h1>
+        <p class="lead">
+            --Ted Striphas, <a href="https://a.co/d/1yNxKFM"> The Late Age of Print: Everyday Book Culture from Consumerism to Control</a>
+            </p>
+            
+        
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="container col-xxl-8 px-2 py-3">
+    <div class="row flex-rt-row-reverse align-items-center g-2 py-3">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <iframe type="text/html" sandbox="allow-scripts allow-same-origin allow-popups" width="433" height="700" frameborder="0" allowfullscreen style="max-width:100%" src="https://read.amazon.com/kp/card?asin=B09D434KJV&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_PGJAK8TEVN969611YJ0C" ></iframe>
+        <!--
+            <img src="./images/burdenchoice.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+        -->
+      </div>
+      <div class="col-lg-6">
+        <h2 class="display-5 fw-bold text-body-emphasis lh-1 mb-3"><i>...This excellent collection pulls together an impressive array of approaches to this concept that will give readers a broad but detailed look at how ostensibly challenging material was made palatable on television.</i></h2>
+        <p class="lead">
+            --Derek Kompare, <a href="https://a.co/d/1W5vG0x">Making Media Work: Cultures of Management in the Entertainment Industries</a>
+            </p>
+
+            
+      </div>
+    </div>
+  </div>
+   
+
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+    <div  class="col">
+      
+          
+        </div>
+      </div>
+    </div>
+   
+
+ <!-- full stack section-->
+ <div class="container">
+    <h2 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Fullstack Coding Projects</h2>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+
+    <a href="https://github.com/jacohn/nature_busTracker"> <div class="col">
+        <div class="card border-primary mb-3 h-100" style="max-width: 18rem;">
+            <div class="card-header">API Calls</div>
+          <img src="./images/maps.png" class="card-img-top" alt="pink map of cambridge">
+          <div class="card-body">
+            <h5 class="card-title">Bus Routes</h5>
+            <p class="card-text">Map Animation and Style Experiments</p>
+          </div>
+        </div>
+      </div></a>
+
+<a href="https://github.com/jacohn/eye_movement">
+    <div class="col">
+    <div class="card border-primary mb-3 h-100" style="max-width: 18rem;">
+        <div class="card-header">Tracking</div>
+    <img src="./images/eyes.png" class="card-img-top" alt="eyes">
+    <div class="card-body">
+      <h5 class="card-title">Eye Movement</h5>
+      <p class="card-text">Mouse tracking exercise</p>
+    </div>
+  </div>
+</div></a>
+
+<a href="https://github.com/jacohn/PacMan_Factory"> <div class="col">
+    <div class="card border-primary mb-3 h-100" style="max-width: 18rem;">
+        <div class="card-header">DOM Manipulation</div>
+      <img src="./images/PacMan1.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Pacman Factory</h5>
+        <p class="card-text">Create and manipulate elements</p>
+      </div>
+    </div>
+  </div></a>
+
+
+  </div>
+</div>
+
+
+
+
+    <!-- research section-->
+    <div class="container">
+        <h2 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Research and Reporting</h2>
+    
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+
+        <a href="https://messis.vangrimdecorpssecrets.com/en/contents/the-metaverse-or-how-to-fit-the-universe-in-a-cell"> <div class="col">
+            <div class="card border-primary mb-3 h-100" style="max-width: 18rem;">
+                <div class="card-header">Digital Culture</div>
+              <img src="./images/messis.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">The Metaverse</h5>
+                <p class="card-text">Or, how to fit the universe in a cell</p>
+              </div>
+            </div>
+          </div></a>
+
+    <a href="https://www.press.uillinois.edu/books/?id=p087462">
+        <div class="col">
+        <div class="card border-primary mb-3 h-100" style="max-width: 18rem;">
+            <div class="card-header">AI Culture</div>
+        <img src="./images/backends.jpg" class="card-img-top" alt="cover of the book Media Backends with CPUs in a cool color pallet">
+        <div class="card-body">
+          <h5 class="card-title">EugenicTech</h5>
+          <p class="card-text">Three Perspectives On the (B)anality of AI</p>
+        </div>
+      </div>
+    </div></a>
+
+   <a href=""https://muse.jhu.edu/pub/349/article/788639"> 
+    <div class="col">
+        <div class="card border-primary mb-3 h-100" style="max-width: 18rem;">
+            <div class="card-header">AI Art</div>
+          <img src="./images/sunspring.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">The Scientist of the Holy Ghost</h5>
+            <p class="card-text">What AI's art reveals about itself</p>
+          </div>
+        </div>
+    </div></a>
+    
+      <a href="https://www.wired.com/story/big-tech-ethics-bug-bounty/">
+        <div class="col">
+            <div class="card border-primary mb-3 h-100" style="max-width: 18rem;">
+            <div class="card-header">AI Ethics</div>
+        <img src="./images/ethicsbounty.webp" class="card-img-top" alt="justice with scales">
+        <div class="card-body">
+          <h5 class="card-title">Ethics Bug Bounties</h5>
+          <p class="card-text">AI Ethics in Practice</p>
+        </div>
+        </div>
+      </div> </a>
+    
+    
+    <a href="https://theconversation.com/googles-algorithms-discriminate-against-women-and-people-of-colour-112516">
+    <div class="col">
+        
+            <div class="card border-primary mb-3 h-100" style="max-width: 18rem;">
+            <div class="card-header">AI Ethics</div>
+        <img src="./images/google.png" class="card-img-top" alt="google black history month main page celebrating sojourner truth">
+        <div class="card-body">
+          <h5 class="card-title">Google</h5>
+          <p class="card-text">and Algorithmic Inequities</p>
+        </div>
+    </div>
+      </div></a>
+    
+
+    <div class="col">
+        <div class="card border-primary mb-3 h-100" style="max-width: 18rem;">
+            <div class="card-header">More Research</div>
+          <img src="./images/stablediffusion.jpg" class="card-img-top" alt="google black history month main page celebrating sojourner truth">
+          <div class="card-body">
+            <h5 class="card-title">For more articles...</h5>
+            
+            <p class="card-text">Download on</p>
+            <a href="https://www.researchgate.net/profile/Jonathan-Cohn-2" class="btn btn-primary">ResearchGate</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+     <!-- Teaching section-->
+     <div class="container">
+        <h2 class="display-5 fw-bold text-body-emphasis lh-1 mb-3" style="margin-top: 25px;">Technical Writing & Instructional Design:</h2>
+        <a href="https://docs.omnifysoft.com/v830/GeneralHelpFiles/WhatsNew/OverviewofEmpower830.html">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+        
+        
+           <div class="col">
+            <div class="card border-primary mb-3 h-100" style="max-width: 18rem;">
+          <div class="card-header">Help System Management</div>
+          <img src="./images/empower.png" class="card-img-top" alt="a section of a help system focused on "whats new.">
+          <div class="card-body text-primary">
+            <h5 class="card-title">Empower PLM</h5>
+            <p class="card-text">Vuepress Help System and Release Notes</p>
+          </div>
+        </div>
+    </div></a>
+
+    <a href="https://www.arenasolutions.com/">
+        <div class="col">
+        <div class="card border-primary mb-3 h-100" style="max-width: 18rem;">
+            <div class="card-header">DITA | Saas</div>
+        <img src="./images/arena.png" class="card-img-top" alt="words Arena PLM Platform">
+        <div class="card-body">
+          <h5 class="card-title">Enterprise PLM/QMS</h5>
+          <p class="card-text"> Help fpr creating more efficient, safe, and sustainable products.</p>
+        </div>
+      </div>
+    </div></a>
+
+   <a href="https://sites.research.google/scouts/#our-research"> 
+    <div class="col">
+        <div class="card border-primary mb-3 h-100" style="max-width: 18rem;">
+            <div class="card-header">Instructional Design</div>
+          <img src="./images/scouts.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">AI Ethics @ Google</h5>
+            <p class="card-text">Internal Self-Guided Courses</p>
+          </div>
+        </div>
+      </div></a>
+    
+    
+          <a href="https://github.com/jacohn/UX-Tech-Doc-Portfolio/blob/main/queer%20games%20syllabus-2.pdf">
+    <div class="col">
+        <div class="card border-primary mb-3 h-100" style="max-width: 18rem;">
+            <div class="card-header">HigherEd</div>
+        <img src="./images/QueerGames1.png" class="card-img-top" alt="queer game syllabus">
+        <div class="card-body">
+          <h5 class="card-title">Queer Video Games Syllabus</h5>
+          <p class="card-text">History | Analysis | Production</p>
+        </div>
+      </div>
+    </div></a>
+
+    <div class="col">
+        <div class="card border-primary mb-3 h-100" style="max-width: 18rem;">
+            <div class="card-header">Curriculum Design</div>
+          <img src="./images/teaching.jpg" class="card-img-top" alt="google black history month main page celebrating sojourner truth">
+          <div class="card-body">
+            <h5 class="card-title">For more teaching materials...</h5>
+            
+            <p class="card-text">Download on</p>
+            <a href="https://www.researchgate.net/profile/Jonathan-Cohn-2" class="btn btn-primary">ResearchGate</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="bd-footer py-4 py-md-5 mt-5 bg-body-tertiary">
+        <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
+          <div class="row">
+            <div class="col-lg-3 mb-3">
+              
+              <ul class="list-unstyled small">
+                
+                <li class="mb-2">Portfolio created as part of the <a href="https://xpro.mit.edu/courses/course-v1:xPRO+PCCx/">MITx Full Stack Development with MERN certificate program</a></li>
+                <div class="small-text">© 2023 <b>Jonathan Cohn</b></div>
+                
+              </ul>
+              
+            </div>
+            <!--
+            <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+              <h5>Contact</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2"><a href="/">Home</a></li>
+                <li class="mb-2"><a href="/docs/5.3/">Docs</a></li>
+                <li class="mb-2"><a href="/docs/5.3/examples/">Examples</a></li>
+                <li class="mb-2"><a href="https://icons.getbootstrap.com/">Icons</a></li>
+                <li class="mb-2"><a href="https://themes.getbootstrap.com/">Themes</a></li>
+                <li class="mb-2"><a href="https://blog.getbootstrap.com/">Blog</a></li>
+                <li class="mb-2"><a href="https://cottonbureau.com/people/bootstrap">Swag Store</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-2 mb-3">
+              <h5>Guides</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2"><a href="/docs/5.3/getting-started/">Getting started</a></li>
+                <li class="mb-2"><a href="/docs/5.3/examples/starter-template/">Starter template</a></li>
+                <li class="mb-2"><a href="/docs/5.3/getting-started/webpack/">Webpack</a></li>
+                <li class="mb-2"><a href="/docs/5.3/getting-started/parcel/">Parcel</a></li>
+                <li class="mb-2"><a href="/docs/5.3/getting-started/vite/">Vite</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-2 mb-3">
+              <h5>Projects</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2"><a href="https://github.com/twbs/bootstrap">Bootstrap 5</a></li>
+                <li class="mb-2"><a href="https://github.com/twbs/bootstrap/tree/v4-dev">Bootstrap 4</a></li>
+                <li class="mb-2"><a href="https://github.com/twbs/icons">Icons</a></li>
+                <li class="mb-2"><a href="https://github.com/twbs/rfs">RFS</a></li>
+                <li class="mb-2"><a href="https://github.com/twbs/examples/">Examples repo</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-2 mb-3">
+              <h5>Community</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2"><a href="https://github.com/twbs/bootstrap/issues">Issues</a></li>
+                <li class="mb-2"><a href="https://github.com/twbs/bootstrap/discussions">Discussions</a></li>
+                <li class="mb-2"><a href="https://github.com/sponsors/twbs">Corporate sponsors</a></li>
+                <li class="mb-2"><a href="https://opencollective.com/bootstrap">Open Collective</a></li>
+                <li class="mb-2"><a href="https://stackoverflow.com/questions/tagged/bootstrap-5">Stack Overflow</a></li>
+              </ul>
+            </div>
+        -->
+          </div>
+        </div>
+      </footer>
+  </body>
+</html>
