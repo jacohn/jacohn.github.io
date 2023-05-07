@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+
+
 body {
   padding-top: 60px;
   padding-left:5px;
@@ -8,11 +12,7 @@ body {
   }
 }
 
-.card-img-top {
-    width: auto;
-    height: 10vw;
-    object-fit: contain;
-}
+
 
 a:link {
     text-decoration: none;
@@ -30,7 +30,9 @@ a:link {
     text-decoration: underline;
   }
 
-  
+  .navbar-brand {
+    font-family: 'Delicious Handrawn', cursive;
+  }
 
   .header {
     font-size: 70px;
