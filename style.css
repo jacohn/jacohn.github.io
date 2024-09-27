@@ -1,44 +1,33 @@
+/* Custom Styles */
 
-@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
-
-
+/* Body Styles */
 body {
-  padding-top: 60px;
-  padding-left:5px;
-}
-@media (max-width: 979px) {
-  body {
-    padding-top: 0px;
-  }
+  font-family: 'Inter', sans-serif;
 }
 
+/* Navbar Styles */
+nav {
+  backdrop-filter: saturate(180%) blur(20px);
+}
 
+/* Hero Section */
+.hero-section {
+  background-image: url('./images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
 
-a:link {
-    text-decoration: none;
-  }
-  
-  a:visited {
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  a:active {
-    text-decoration: underline;
-  }
+/* Card Hover Effects */
+.bg-white:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
 
-  .navbar-brand {
-    font-family: 'Delicious Handrawn', cursive;
-  }
+/* Footer Links */
+footer a {
+  color: #ffffff;
+}
 
-  .header {
-    font-size: 70px;
-    font-weight: 600;
-    background-image: linear-gradient(to left, #553c9a, #b393d3);
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-  }
+footer a:hover {
+  text-decoration: underline;
+}
