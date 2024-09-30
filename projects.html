@@ -1,164 +1,224 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Coding Projects | Jonathan Cohn</title>
+  <meta charset="UTF-8">
+  <title>Projects | Jonathan Cohn</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
+
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
-</head>
-<body class="bg-gray-100 text-gray-900">
 
-<!-- Navigation -->
-<nav class="bg-white shadow fixed w-full z-10">
-  <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-    <a class="font-bold text-xl text-indigo-600" href="./index.html">Jonathan Cohn</a>
-    <div class="flex space-x-4">
-      <div class="relative">
-        <button class="text-gray-600 hover:text-indigo-600 focus:outline-none" id="portfolioButton">Portfolios ▼</button>
-        <div id="portfolioMenu" class="absolute right-0 mt-2 py-2 w-48 bg-white border rounded shadow-xl hidden">
-          <a href="https://github.com/jacohn/AcademicResearch" target="_blank" class="block px-4 py-2 text-gray-800 hover:bg-indigo-600 hover:text-white">Writing</a>
-          <a href="https://scholar.google.com/citations?user=kAl8J9oAAAAJ&hl=en" target="_blank" class="block px-4 py-2 text-gray-800 hover:bg-indigo-600 hover:text-white">Google Scholar</a>
-          <a href="https://github.com/jacohn/InstructionalDesign" target="_blank" class="block px-4 py-2 text-gray-800 hover:bg-indigo-600 hover:text-white">Teaching</a>
-          <hr class="border-t my-2">
-          <a href="./projects.html" class="block px-4 py-2 text-gray-800 hover:bg-indigo-600 hover:text-white">Full Stack</a>
+  <!-- Font Awesome for Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <!-- Favicon -->
+  <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Navigation -->
+  <nav class="bg-white border-b border-gray-200 fixed w-full z-10">
+    <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+      <a class="font-bold text-2xl text-indigo-600" href="./index.html">Jonathan Cohn</a>
+      <div class="hidden md:flex space-x-6">
+        <a href="./index.html" class="hover:text-indigo-600">Home</a>
+        <a href="./work.html" class="hover:text-indigo-600">Work</a>
+        <a href="./projects.html" class="hover:text-indigo-600">Projects</a>
+        <a href="https://youtu.be/x3s0fwBWOCc" target="_blank" class="hover:text-indigo-600">Video Intro</a>
+        <a href="mailto:jacohn@gmail.com" class="hover:text-indigo-600">Contact</a>
+      </div>
+      <div class="md:hidden">
+        <button id="menuButton" class="focus:outline-none">
+          <i class="fas fa-bars fa-lg"></i>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden">
+      <a href="./index.html" class="block px-4 py-2 hover:bg-gray-100">Home</a>
+      <a href="./work.html" class="block px-4 py-2 hover:bg-gray-100">Work</a>
+      <a href="./projects.html" class="block px-4 py-2 hover:bg-gray-100">Projects</a>
+      <a href="https://youtu.be/x3s0fwBWOCc" target="_blank" class="block px-4 py-2 hover:bg-gray-100">Video Intro</a>
+      <a href="mailto:jacohn@gmail.com" class="block px-4 py-2 hover:bg-gray-100">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Projects Section -->
+  <section class="container mx-auto py-24 px-6">
+    <h1 class="text-4xl font-bold text-center mb-12">Technical Writing & Full Stack Coding Projects</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Project 1: Arena PLM/QMS Documentation -->
+      <div class="bg-white rounded shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+        <img alt="Arena PLM Platform" class="w-full h-48 object-cover" src="./images/arena.png">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Arena PLM/QMS Documentation</h3>
+          <ul class="list-disc list-inside text-gray-700 mb-4">
+            <li>Utilized WalkMe, DITA XML, and SaaS platforms to create scalable documentation.</li>
+            <li>Developed in-app guides and UX writing for Arena Solutions.</li>
+            <li>Aided companies in manufacturing efficient, safe, and sustainable products.</li>
+            <li>Worked on localization and version control.</li>
+          </ul>
+          <a class="mt-4 inline-block text-indigo-600 hover:underline" href="https://www.arenasolutions.com/" target="_blank">View Project &rarr;</a>
         </div>
       </div>
-      <a href="https://github.com/jacohn" target="_blank" class="text-gray-600 hover:text-indigo-600">
-        <i class="fab fa-github fa-lg"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/jonathan-cohn-phd/" target="_blank" class="text-gray-600 hover:text-indigo-600">
-        <i class="fab fa-linkedin fa-lg"></i>
-      </a>
-      <a href="mailto:jacohn@gmail.com" class="text-gray-600 hover:text-indigo-600">
-        <i class="fas fa-envelope fa-lg"></i>
-      </a>
-    </div>
-  </div>
-</nav>
-
-<!-- Projects Section -->
-<section class="container mx-auto py-24">
-  <h1 class="text-4xl font-bold text-center mb-12">Full Stack Coding Projects</h1>
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-    <!-- Project 1 -->
-    <div class="bg-white rounded shadow-lg overflow-hidden">
-      <img src="./images/ai_dashboard.png" alt="AI Dashboard" class="w-full h-48 object-cover">
-      <div class="p-6">
-        <h3 class="text-xl font-semibold mb-2">AI Analytics Dashboard</h3>
-        <p class="text-gray-700 mb-4">
-          Developed a real-time analytics dashboard using React and Node.js to monitor AI model performance. Emphasized clear data visualization and user-friendly interface.
-        </p>
-        <p class="text-sm text-indigo-600 font-semibold">Technical Writing Skills:</p>
-        <ul class="list-disc list-inside text-gray-700">
-          <li>Documented API endpoints</li>
-          <li>Created user manuals</li>
-          <li>Wrote onboarding guides</li>
-        </ul>
-        <a href="https://github.com/jacohn/ai-analytics-dashboard" target="_blank" class="mt-4 inline-block text-indigo-600 hover:underline">View on GitHub &rarr;</a>
+      <!-- Project 2: Empower PLM Documentation -->
+      <div class="bg-white rounded shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+        <img alt="Empower PLM" class="w-full h-48 object-cover" src="./images/empower.png">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Empower PLM Documentation</h3>
+          <ul class="list-disc list-inside text-gray-700 mb-4">
+            <li>Developed comprehensive API documentation and user guides using VuePress and Markdown.</li>
+            <li>Focused on release notes and onboarding materials.</li>
+            <li>Enhanced user understanding of Empower PLM software.</li>
+            <li>Collaborated with engineering teams to ensure accuracy.</li>
+          </ul>
+          <a class="mt-4 inline-block text-indigo-600 hover:underline" href="https://docs.omnifysoft.com/v850/GeneralHelpFiles/WhatsNew/OverviewofEmpower850.html" target="_blank">View Project &rarr;</a>
+        </div>
+      </div>
+      <!-- Project 3: AI Ethics Training at Google -->
+      <div class="bg-white rounded shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+        <img alt="AI Ethics at Google" class="w-full h-48 object-cover" src="./images/scouts.png">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">AI Ethics Training at Google</h3>
+          <ul class="list-disc list-inside text-gray-700 mb-4">
+            <li>Created self-guided courses on AI ethics.</li>
+            <li>Promoted responsible AI practices among engineering teams.</li>
+            <li>Enhanced adoption of Google's GenAI product development process.</li>
+            <li>Collaborated with cross-functional teams.</li>
+          </ul>
+          <a class="mt-4 inline-block text-indigo-600 hover:underline" href="https://sites.research.google/scouts/#our-research" target="_blank">View Project &rarr;</a>
+        </div>
+      </div>
+      <!-- Project 4: API and SDK Guides -->
+      <div class="bg-white rounded shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+        <img alt="API Documentation" class="w-full h-48 object-cover" src="./images/api.webp">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">API and SDK Guides</h3>
+          <ul class="list-disc list-inside text-gray-700 mb-4">
+            <li>Maintained comprehensive guides for <strong>Arena</strong> and <strong>Empower APIs</strong>.</li>
+            <li>Deep understanding of API and SDK documentation principles.</li>
+            <li>Developed API guides that reduced developer onboarding time by 30%.</li>
+            <li>Collaborated with engineers to keep documentation up-to-date across multiple API versions.</li>
+            <li>Structured content to maximize reuse and streamline the documentation process.</li>
+          </ul>
+          <a class="mt-4 inline-block text-indigo-600 hover:underline" href="https://docs.omnifysoft.com/v850/API_Guides/API_Guides.html" target="_blank">View Empower API Guides &rarr;</a><br>
+          <a class="mt-2 inline-block text-indigo-600 hover:underline" href="https://github.com/ptc-arena" target="_blank">View Arena API Guides &rarr;</a>
+        </div>
+      </div>
+      <!-- Project 5: DITA Documentation Portfolio -->
+      <div class="bg-white rounded shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+        <img alt="DITA Documentation Portfolio" class="w-full h-48 object-cover" src="./images/projects.webp">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">DITA Documentation Portfolio</h3>
+          <ul class="list-disc list-inside text-gray-700 mb-4">
+            <li>Proficient in structured content management using <strong>DITA XML</strong>.</li>
+            <li>Applied modular writing techniques for adaptable and scalable documentation.</li>
+            <li>Implemented effective content reuse strategies for efficiency.</li>
+            <li>Developed procedural, conceptual, and reference-based documentation.</li>
+            <li>Utilized Oxygen XML Editor for DITA authoring.</li>
+            <li>Collaborated with SMEs to ensure technical accuracy.</li>
+            <li>Optimized information architecture for enhanced user experience.</li>
+          </ul>
+          <a class="mt-4 inline-block text-indigo-600 hover:underline" href="https://github.com/jacohn/UX-Tech-Doc-Portfolio/tree/main/DITA%20portfolio" target="_blank">View on GitHub &rarr;</a>
+        </div>
+      </div>
+      <!-- Project 6: API Documentation and Correspondence -->
+      <div class="bg-white rounded shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+        <img alt="Code Documentation" class="w-full h-48 object-cover" src="./images/collaboration.webp">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">API Documentation and Correspondence</h3>
+          <ul class="list-disc list-inside text-gray-700 mb-4">
+            <li>Specialized in developer-focused technical writing.</li>
+            <li>Facilitated clear, professional communication across teams and external partners.</li>
+            <li>Documented complex API integrations, streamlining developer onboarding.</li>
+            <li>Used GitHub for collaborative documentation updates and version control.</li>
+            <li>Worked with engineers to ensure clarity and accuracy.</li>
+          </ul>
+          <a class="mt-4 inline-block text-indigo-600 hover:underline" href="https://github.com/jacohn/UX-Tech-Doc-Portfolio/blob/main/API_doc_correspondence.pdf" target="_blank">View PDF &rarr;</a>
+        </div>
+      </div>
+      <!-- Project 7: CohnCalc End-User Guide with DITA Implementation -->
+      <div class="bg-white rounded shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+        <img alt="CohnCalc Guide" class="w-full h-48 object-cover" src="./images/calculator_dita.webp">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">CohnCalc End-User Guide with DITA Implementation</h3>
+          <ul class="list-disc list-inside text-gray-700 mb-4">
+            <li>Expertise in <strong>DITA XML</strong> authoring for modular content management.</li>
+            <li>Developed a user guide that reduced customer support inquiries by 25%.</li>
+            <li>Employed content reuse strategies, cutting documentation development time by 40%.</li>
+            <li>Conducted user testing to enhance the guide’s usability.</li>
+          </ul>
+          <a class="mt-4 inline-block text-indigo-600 hover:underline" href="https://github.com/jacohn/UX-Tech-Doc-Portfolio/tree/main/DITA%20portfolio" target="_blank">View DITA Input &rarr;</a><br>
+          <a class="mt-2 inline-block text-indigo-600 hover:underline" href="https://htmlpreview.github.io/?https://github.com/jacohn/DITA-XML-docu/blob/main/html5/index.html" target="_blank">View DITA Output &rarr;</a>
+        </div>
+      </div>
+      <!-- Project 8: Article on Privacy Legislation (VPPA) -->
+      <div class="bg-white rounded shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+        <img alt="Privacy Legislation Article" class="w-full h-48 object-cover" src="./images/vhs-tape.webp">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Article on Privacy Legislation (VPPA)</h3>
+          <ul class="list-disc list-inside text-gray-700 mb-4">
+            <li>Researched and wrote about digital privacy and security laws, focusing on VPPA.</li>
+            <li>Clarified the impact of VPPA on online privacy regulations for a broad audience.</li>
+            <li>Simplified legal and technical concepts, making them accessible to non-experts.</li>
+            <li>Collaborated with legal experts to ensure accuracy and engagement.</li>
+            <li>Contributed to discussions on digital privacy, influencing perspectives in tech media.</li>
+          </ul>
+          <a class="mt-4 inline-block text-indigo-600 hover:underline" href="https://www.salon.com/2019/08/04/online-viewer-privacy-is-regulated-by-an-act-originally-designed-to-protect-video-rentals_partner/" target="_blank">View Salon Article &rarr;</a>
+        </div>
+      </div>
+      <!-- Project 9: Breakfast Documentation Suite -->
+      <div class="bg-white rounded shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+        <img alt="Breakfast Documentation" class="w-full h-48 object-cover" src="./images/breakfast.webp">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Breakfast Documentation Suite</h3>
+          <ul class="list-disc list-inside text-gray-700 mb-4">
+            <li>Created versatile documentation across conceptual, procedural, and reference formats.</li>
+            <li>Delivered step-by-step instructions with clear conceptual explanations.</li>
+            <li>Demonstrated flexibility in adapting content to different formats and user needs.</li>
+            <li>Used <strong>Markdown</strong> for concise and effective documentation.</li>
+            <li>Enhanced the user experience with visual guides and accessible content.</li>
+            <li>Partnered with UX designers to ensure documentation accessibility and user engagement.</li>
+          </ul>
+          <a class="mt-4 inline-block text-indigo-600 hover:underline" href="https://github.com/jacohn/UX-Tech-Doc-Portfolio/tree/main/MD%20portfolio" target="_blank">View Files &rarr;</a>
+        </div>
+      </div>
+      <!-- Project 10: Ethics Bounty System Proposal -->
+      <div class="bg-white rounded shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+        <img alt="Ethics Bounty System" class="w-full h-48 object-cover" src="./images/An-Ethics-Bounty-System-Could-Help-Clean-Up-the-Web.webp">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Ethics Bounty System Proposal</h3>
+          <ul class="list-disc list-inside text-gray-700 mb-4">
+            <li>Proposed innovative solutions for ethical technology compliance.</li>
+            <li>Explored the intersection of ethics and technology with forward-thinking strategies.</li>
+            <li>Presented the proposal to cross-functional teams, fostering industry-wide discussions.</li>
+            <li>Collaborated with key stakeholders to refine the proposal.</li>
+          </ul>
+          <a class="mt-4 inline-block text-indigo-600 hover:underline" href="https://www.wired.com/story/big-tech-ethics-bug-bounty/" target="_blank">View Wired Article &rarr;</a>
+        </div>
       </div>
     </div>
-    <!-- Project 2 -->
-    <div class="bg-white rounded shadow-lg overflow-hidden">
-      <img src="./images/chatbot.png" alt="AI Chatbot" class="w-full h-48 object-cover">
-      <div class="p-6">
-        <h3 class="text-xl font-semibold mb-2">AI-Powered Chatbot</h3>
-        <p class="text-gray-700 mb-4">
-          Built an AI chatbot using Python and TensorFlow for customer support automation. Focused on natural language understanding and seamless user interactions.
-        </p>
-        <p class="text-sm text-indigo-600 font-semibold">Technical Writing Skills:</p>
-        <ul class="list-disc list-inside text-gray-700">
-          <li>Developed training materials</li>
-          <li>Authored troubleshooting guides</li>
-          <li>Created API documentation</li>
-        </ul>
-        <a href="https://github.com/jacohn/ai-chatbot" target="_blank" class="mt-4 inline-block text-indigo-600 hover:underline">View on GitHub &rarr;</a>
-      </div>
-    </div>
-    <!-- Project 3 -->
-    <div class="bg-white rounded shadow-lg overflow-hidden">
-      <img src="./images/nlp_toolkit.png" alt="NLP Toolkit" class="w-full h-48 object-cover">
-      <div class="p-6">
-        <h3 class="text-xl font-semibold mb-2">NLP Toolkit</h3>
-        <p class="text-gray-700 mb-4">
-          Created a Natural Language Processing toolkit in JavaScript for text analysis and sentiment detection. Emphasized modular design and extensibility.
-        </p>
-        <p class="text-sm text-indigo-600 font-semibold">Technical Writing Skills:</p>
-        <ul class="list-disc list-inside text-gray-700">
-          <li>Wrote comprehensive API docs</li>
-          <li>Developed usage examples</li>
-          <li>Maintained a developer wiki</li>
-        </ul>
-        <a href="https://github.com/jacohn/nlp-toolkit" target="_blank" class="mt-4 inline-block text-indigo-600 hover:underline">View on GitHub &rarr;</a>
-      </div>
-    </div>
-    <!-- Additional Projects -->
-    <!-- Project 4 -->
-    <div class="bg-white rounded shadow-lg overflow-hidden">
-      <img src="./images/data_visualization.png" alt="Data Visualization" class="w-full h-48 object-cover">
-      <div class="p-6">
-        <h3 class="text-xl font-semibold mb-2">Interactive Data Visualization</h3>
-        <p class="text-gray-700 mb-4">
-          Developed interactive data visualizations using D3.js to represent complex datasets in an accessible manner.
-        </p>
-        <p class="text-sm text-indigo-600 font-semibold">Technical Writing Skills:</p>
-        <ul class="list-disc list-inside text-gray-700">
-          <li>Created user documentation</li>
-          <li>Wrote technical blogs</li>
-          <li>Prepared tutorial videos</li>
-        </ul>
-        <a href="https://github.com/jacohn/data-visualization" target="_blank" class="mt-4 inline-block text-indigo-600 hover:underline">View on GitHub &rarr;</a>
-      </div>
-    </div>
-    <!-- Project 5 -->
-    <div class="bg-white rounded shadow-lg overflow-hidden">
-      <img src="./images/ai_recommender.png" alt="AI Recommender System" class="w-full h-48 object-cover">
-      <div class="p-6">
-        <h3 class="text-xl font-semibold mb-2">AI Recommender System</h3>
-        <p class="text-gray-700 mb-4">
-          Built a recommendation engine using machine learning algorithms to personalize user experiences on web platforms.
-        </p>
-        <p class="text-sm text-indigo-600 font-semibold">Technical Writing Skills:</p>
-        <ul class="list-disc list-inside text-gray-700">
-          <li>Authored algorithm documentation</li>
-          <li>Compiled data processing guides</li>
-          <li>Maintained project documentation</li>
-        </ul>
-        <a href="https://github.com/jacohn/ai-recommender-system" target="_blank" class="mt-4 inline-block text-indigo-600 hover:underline">View on GitHub &rarr;</a>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- Footer -->
-<footer class="bg-indigo-600 text-white py-6">
-  <div class="container mx-auto text-center">
-    <p>Portfolio created as part of the <a href="https://xpro.mit.edu/courses/course-v1:xPRO+PCCx/" class="underline">MITx Full Stack Development with MERN certificate program</a></p>
-    <p>&copy; 2023 Jonathan Cohn</p>
-  </div>
-</footer>
+  <!-- Footer -->
+  <footer class="bg-indigo-600 text-white py-6">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Jonathan Cohn</p>
+    </div>
+  </footer>
 
-<!-- Tailwind JS for Dropdown -->
-<script>
-  const portfolioButton = document.getElementById('portfolioButton');
-  const portfolioMenu = document.getElementById('portfolioMenu');
+  <!-- Mobile Menu Script -->
+  <script>
+    const menuButton = document.getElementById('menuButton');
+    const mobileMenu = document.getElementById('mobileMenu');
 
-  portfolioButton.addEventListener('click', () => {
-    portfolioMenu.classList.toggle('hidden');
-  });
-
-  window.onclick = function(event) {
-    if (!event.target.matches('#portfolioButton')) {
-      if (!portfolioMenu.classList.contains('hidden')) {
-        portfolioMenu.classList.add('hidden');
-      }
-    }
-  }
-</script>
-<!-- Font Awesome for Icons -->
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    menuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
 
 </body>
 </html>
