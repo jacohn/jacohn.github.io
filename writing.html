@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Writing & Books | Jonathan Cohn</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome for Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <!-- Favicon -->
+  <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+</head>
+<body class="bg-white text-gray-800">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <!-- Navigation -->
+  <nav class="bg-white border-b border-gray-200 fixed w-full z-10">
+    <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+      <a class="font-bold text-2xl text-indigo-600" href="./index.html">Jonathan Cohn</a>
+      <div class="hidden md:flex space-x-6">
+        <a href="./index.html" class="hover:text-indigo-600">Home</a>
+        <a href="./projects.html" class="hover:text-indigo-600">Portfolio</a>
+        <a href="./work.html" class="hover:text-indigo-600">Experience</a>
+        <a href="./writing.html" class="hover:text-indigo-600">Writing &amp; Books</a>
+        <a href="./about.html" class="hover:text-indigo-600">About &amp; Contact</a>
+      </div>
+      <div class="md:hidden">
+        <button id="menuButton" class="focus:outline-none" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileMenu">
+          <i class="fas fa-bars fa-lg"></i>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden">
+      <a href="./index.html" class="block px-4 py-2 hover:bg-gray-100">Home</a>
+      <a href="./projects.html" class="block px-4 py-2 hover:bg-gray-100">Portfolio</a>
+      <a href="./work.html" class="block px-4 py-2 hover:bg-gray-100">Experience</a>
+      <a href="./writing.html" class="block px-4 py-2 hover:bg-gray-100">Writing &amp; Books</a>
+      <a href="./about.html" class="block px-4 py-2 hover:bg-gray-100">About &amp; Contact</a>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <!-- Writing Section -->
+    <section class="container mx-auto py-24 px-6">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h1 class="text-4xl font-bold mb-4">Writing &amp; Books</h1>
+        <p class="text-lg text-gray-700">I write about how AI, media, and infrastructures shape everyday life and work.</p>
+      </div>
+
+      <!-- Books -->
+      <div class="mb-16">
+        <h2 class="text-2xl font-semibold mb-6">Books</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="card overflow-hidden">
+          <img src="./images/burdenChoice.png" alt="The Burden of Choice" class="w-full h-64 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold">The Burden of Choice</h3>
+            <p class="text-gray-700 italic">Algorithms, Recommendations, and Digital Culture</p>
+            <p class="text-gray-700 mt-3">How recommendation systems shape taste, behavior, and decision-making in digital life.</p>
+            <a href="https://www.rutgersuniversitypress.org/the-burden-of-choice/9781978804500" target="_blank" class="mt-4 inline-block text-indigo-600 hover:underline">Learn More &rarr;</a>
+          </div>
+        </div>
+          <div class="card overflow-hidden">
+          <img src="./images/VSE.png" alt="Very Special Episodes" class="w-full h-64 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold">Very Special Episodes</h3>
+            <p class="text-gray-700 italic">Televising Industrial and Social Change</p>
+            <p class="text-gray-700 mt-3">How media reflects and shapes cultural shifts through pivotal stories and formats.</p>
+            <a href="https://www.rutgersuniversitypress.org/very-special-episodes/9781978821224" target="_blank" class="mt-4 inline-block text-indigo-600 hover:underline">Learn More &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- Essays -->
+      <div class="mb-16">
+        <h2 class="text-2xl font-semibold mb-6">Selected Essays &amp; Articles</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="card p-6">
+          <p class="text-sm uppercase tracking-wide text-indigo-600 font-semibold mb-1">AI / Algorithms</p>
+          <h3 class="text-lg font-semibold">Ethics Bounty System Proposal</h3>
+          <p class="text-gray-700">Ideas for incentivizing ethical technology practices.</p>
+          <a href="https://www.wired.com/story/big-tech-ethics-bug-bounty/" target="_blank" class="text-indigo-600 hover:underline">Read on Wired &rarr;</a>
+        </div>
+          <div class="card p-6">
+          <p class="text-sm uppercase tracking-wide text-indigo-600 font-semibold mb-1">Ethics &amp; Policy</p>
+          <h3 class="text-lg font-semibold">Online Viewer Privacy &amp; VPPA</h3>
+          <p class="text-gray-700">How legacy privacy laws shape modern streaming and data practices.</p>
+          <a href="https://www.salon.com/2019/08/04/online-viewer-privacy-is-regulated-by-an-act-originally-designed-to-protect-video-rentals_partner/" target="_blank" class="text-indigo-600 hover:underline">Read on Salon &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+      <!-- Open To -->
+      <div class="bg-indigo-50 border border-indigo-100 rounded-xl p-8">
+        <h2 class="text-2xl font-semibold mb-3 text-indigo-900">Work I’d Like to Do More Of</h2>
+        <p class="text-indigo-900">Thought leadership, essays, and research that connect AI product strategy with culture, infrastructure, and developer experience.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-indigo-600 text-white py-6">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Jonathan Cohn</p>
+    </div>
+  </footer>
+
+  <!-- Mobile Menu Script -->
+  <script>
+    const menuButton = document.getElementById('menuButton');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    menuButton.addEventListener('click', () => {
+      const isHidden = mobileMenu.classList.toggle('hidden');
+      menuButton.setAttribute('aria-expanded', !isHidden);
+    });
+  </script>
+
+</body>
+</html>

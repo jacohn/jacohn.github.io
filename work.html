@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Work | Jonathan Cohn</title>
+  <title>Experience | Jonathan Cohn</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Tailwind CSS -->
@@ -11,10 +11,14 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
 
+  <!-- Font Awesome for Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
   <!-- Favicon -->
   <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
 </head>
 <body class="bg-white text-gray-800">
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
   <!-- Navigation (same as index.html) -->
   <nav class="bg-white border-b border-gray-200 fixed w-full z-10">
@@ -22,13 +26,13 @@
       <a class="font-bold text-2xl text-indigo-600" href="./index.html">Jonathan Cohn</a>
       <div class="hidden md:flex space-x-6">
         <a href="./index.html" class="hover:text-indigo-600">Home</a>
-        <a href="./work.html" class="hover:text-indigo-600">Work</a>
-        <a href="./projects.html" class="hover:text-indigo-600">Projects</a>
-        <a href="https://youtu.be/x3s0fwBWOCc" target="_blank" class="hover:text-indigo-600">Video Intro</a>
-        <a href="mailto:jacohn@gmail.com" class="hover:text-indigo-600">Contact</a>
+        <a href="./projects.html" class="hover:text-indigo-600">Portfolio</a>
+        <a href="./work.html" class="hover:text-indigo-600">Experience</a>
+        <a href="./writing.html" class="hover:text-indigo-600">Writing &amp; Books</a>
+        <a href="./about.html" class="hover:text-indigo-600">About &amp; Contact</a>
       </div>
       <div class="md:hidden">
-        <button id="menuButton" class="focus:outline-none">
+        <button id="menuButton" class="focus:outline-none" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileMenu">
           <i class="fas fa-bars fa-lg"></i>
         </button>
       </div>
@@ -36,103 +40,67 @@
     <!-- Mobile Menu -->
     <div id="mobileMenu" class="hidden md:hidden">
       <a href="./index.html" class="block px-4 py-2 hover:bg-gray-100">Home</a>
-      <a href="./work.html" class="block px-4 py-2 hover:bg-gray-100">Work</a>
-      <a href="./projects.html" class="block px-4 py-2 hover:bg-gray-100">Projects</a>
-      <a href="https://youtu.be/x3s0fwBWOCc" target="_blank" class="block px-4 py-2 hover:bg-gray-100">Video Intro</a>
-      <a href="mailto:jacohn@gmail.com" class="block px-4 py-2 hover:bg-gray-100">Contact</a>
+      <a href="./projects.html" class="block px-4 py-2 hover:bg-gray-100">Portfolio</a>
+      <a href="./work.html" class="block px-4 py-2 hover:bg-gray-100">Experience</a>
+      <a href="./writing.html" class="block px-4 py-2 hover:bg-gray-100">Writing &amp; Books</a>
+      <a href="./about.html" class="block px-4 py-2 hover:bg-gray-100">About &amp; Contact</a>
     </div>
   </nav>
 
-  <!-- Work History Section -->
-  <section class="container mx-auto py-24 px-6">
-    <h1 class="text-4xl font-bold text-center mb-12">Work History & Accomplishments</h1>
+  <main id="main-content">
+    <!-- Experience Section -->
+    <section class="container mx-auto py-24 px-6">
+      <h1 class="text-4xl font-bold text-center mb-12">Experience</h1>
 
-    <!-- Professional Summary -->
-    <div class="mb-12">
-      <h2 class="text-2xl font-semibold mb-4">Professional Summary</h2>
-      <p class="text-lg leading-relaxed">
-        Experienced technical writer with over fifteen years of experience and a robust background in API documentation, information architecture, and web application concepts. Proficient in creating comprehensive and user-friendly documentation for complex digital platforms following standard processes. Adept at collaborating with cross-functional teams, including DevOps, to ensure accuracy, clarity, and consistency in technical documentation.
-      </p>
-    </div>
-
-    <!-- Skills -->
-    <div class="mb-12">
-      <h2 class="text-2xl font-semibold mb-4">Relevant Skills</h2>
-      <ul class="list-disc list-inside text-lg leading-relaxed">
-        <li><strong>API Documentation:</strong> Extensive experience in creating and maintaining API documentation and developer-centered help guides at Arena Solutions.</li>
-        <li><strong>Technical Knowledge:</strong> Proficient in full-stack coding, SaaS, Agile workflows, and various digital asset management systems. Experienced in Azure, AWS, and Google Cloud Platform (GCP), including AI product development and cloud service integrations.</li>
-        <li><strong>UX Writing:</strong> Lead UX writer and editor for Arena Solutions, responsible for in-app guides, tooltips, and microcopy using WalkMe.</li>
-        <li><strong>Structured Authoring:</strong> Product owner for Empower’s Help system, written in Markdown. Lead writer on Arena’s help system, using DITA.</li>
-        <li><strong>Cloud/DevOps Collaboration:</strong> Collaborated closely with Arena’s DevOps team, working on Azure-based AI products and writing developer guides for Azure and Google Cloud integrations. Experience with AWS and GovCloud environments.</li>
-        <li><strong>Project Tools:</strong> Daily user of Jira, Confluence, and Figma for task management, collaboration, and design.</li>
-        <li><strong>Content Localization/Globalization:</strong> Extensive work with localization teams and AI tools to translate documentation into five languages and adapt content for global markets, including China.</li>
-        <li><strong>Agile Methodology:</strong> Worked on Arena’s product team following an Agile schedule, with 5-6 major releases a year and biweekly branch releases.</li>
-      </ul>
-    </div>
-
-    <!-- Work History -->
-    <div class="mb-12">
-      <h2 class="text-2xl font-semibold mb-4">Work History</h2>
-
-      <!-- Job 1 -->
-      <div class="mb-8">
-        <h3 class="text-xl font-semibold">Technical Writing Specialist</h3>
-        <p class="text-gray-600">Arena Solutions (PTC) | June 2022 – Present</p>
-        <ul class="list-disc list-inside text-lg leading-relaxed mt-2">
-          <li>Developed comprehensive API documentation, user guides, and onboarding materials for Arena PLM and Empower systems.</li>
-          <li>Lead UX writer, responsible for all in-app guides, tooltips, and microcopy using WalkMe.</li>
-          <li>Worked closely with the DevOps team on cloud SaaS solutions, writing integration guides for Azure and Google Cloud.</li>
-          <li>Owned the Empower Help system, written in Markdown, and led structured authoring efforts in DITA for Arena’s Help system.</li>
-          <li>Collaborated with product management, engineering, and UX teams in an Agile environment.</li>
-          <li>Regularly updated and validated documentation to reflect new features and enhancements.</li>
-          <li>Worked with the localization team and AI tools to translate all content into five languages.</li>
-          <li>Created training materials, video demos, and knowledge base articles.</li>
-          <li>Won research award for PTC-wide AI product market analysis presented to C-suite.</li>
-        </ul>
+      <div class="max-w-3xl mx-auto text-center mb-12">
+        <p class="text-lg leading-relaxed">
+          I’ve worked across enterprise SaaS, big tech, and academia to help teams understand and build complex systems. This page keeps it high-level—just the companies, focus areas, and academic background.
+        </p>
       </div>
 
-      <!-- Job 2 -->
-      <div class="mb-8">
-        <h3 class="text-xl font-semibold">Instructional Designer and AI Ethics SME</h3>
-        <p class="text-gray-600">Google | January 2022 – June 2022</p>
-        <ul class="list-disc list-inside text-lg leading-relaxed mt-2">
-          <li>Developed targeted training modules on ethical AI technologies.</li>
-          <li>Created clear and concise documentation for new AI tools and technologies.</li>
-        </ul>
+      <div class="mb-12">
+        <h2 class="text-2xl font-semibold mb-4">Work History</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="card p-6 h-full">
+            <h3 class="text-xl font-semibold">Arena by PTC — Product Team</h3>
+            <p class="text-gray-700">AI &amp; Integrations product management for PLM/QMS SaaS, focusing on agentic workflows and API modernization.</p>
+          </div>
+          <div class="card p-6 h-full">
+            <h3 class="text-xl font-semibold">Google — AI Ethics</h3>
+            <p class="text-gray-700">Instructional design and narrative framing for responsible AI practices across engineering teams.</p>
+          </div>
+          <div class="card p-6 h-full">
+            <h3 class="text-xl font-semibold">University of Alberta — Director of Digital Humanities &amp; Associate Professor of Digital Culture</h3>
+            <p class="text-gray-700">Led programs in digital culture and computational media; taught AI history, technical writing, and data-driven research methods.</p>
+          </div>
+        </div>
       </div>
 
-      <!-- Job 3 -->
+      <div class="mb-12">
+        <h2 class="text-2xl font-semibold mb-4">Education</h2>
+        <div class="card p-6">
+          <ul class="list-disc list-inside text-lg leading-relaxed">
+            <li>Ph.D., Cinema and Media Studies — UCLA</li>
+            <li>B.A., English — UCLA</li>
+            <li>Professional Certificate in Coding: Full Stack Development with MERN — MITxPro</li>
+            <li>AI Product Management Certification — Product School</li>
+            <li>Generative AI for Software Development — Deeplearning.ai</li>
+          </ul>
+        </div>
+      </div>
+
       <div>
-        <h3 class="text-xl font-semibold">Associate Professor of English and Digital Culture</h3>
-        <p class="text-gray-600">University of Alberta | 2014 – 2023</p>
-        <ul class="list-disc list-inside text-lg leading-relaxed mt-2">
-          <li>Introduced Generative AI, information architecture, and technical writing topics into the curriculum.</li>
-          <li>Directed a Digital Humanities Program and supervised numerous graduate students.</li>
-          <li>Developed and maintained course materials, ensuring clarity and consistency in instructional content.</li>
-        </ul>
+        <h2 class="text-2xl font-semibold mb-4">Research &amp; Writing</h2>
+        <div class="card p-6">
+          <p class="text-lg leading-relaxed mb-4">Research on AI, digital ecosystems, and computational creativity; published books on algorithms, media, and social change.</p>
+          <ul class="list-disc list-inside text-lg leading-relaxed">
+            <li><em>Very Special Episodes: Televising Industrial and Social Change</em>, Rutgers UP</li>
+            <li><em>The Burden of Choice: Algorithms, Recommendations, and Digital Culture</em>, Rutgers UP</li>
+          </ul>
+        </div>
       </div>
-    </div>
-
-    <!-- Education -->
-    <div class="mb-12">
-      <h2 class="text-2xl font-semibold mb-4">Education</h2>
-      <ul class="list-disc list-inside text-lg leading-relaxed">
-        <li>Artificial Intelligence Product Certification | Product School | April 2024</li>
-        <li>Professional Certificate in Coding: Full Stack Development with MERN | MITxPro | Jan–3</li>
-        <li>Ph.D. Cinema and Media Studies | UCLA | 2013</li>
-        <li>B.A. English | UCLA | 2005</li>
-      </ul>
-    </div>
-
-    <!-- Publications -->
-    <div>
-      <h2 class="text-2xl font-semibold mb-4">Book Publications</h2>
-      <ul class="list-disc list-inside text-lg leading-relaxed">
-        <li><em>Very Special Episodes: Televising Industrial and Social Change</em>, Rutgers UP, 2021</li>
-        <li><em>The Burden of Choice: Algorithms, Recommendations, and Digital Culture</em>, Rutgers UP, 2019</li>
-      </ul>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <!-- Footer -->
   <footer class="bg-indigo-600 text-white py-6">
@@ -147,7 +115,8 @@
     const mobileMenu = document.getElementById('mobileMenu');
 
     menuButton.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
+      const isHidden = mobileMenu.classList.toggle('hidden');
+      menuButton.setAttribute('aria-expanded', !isHidden);
     });
   </script>
 

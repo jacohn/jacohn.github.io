@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About & Contact | Jonathan Cohn</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome for Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <!-- Favicon -->
+  <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+</head>
+<body class="bg-white text-gray-800">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <!-- Navigation -->
+  <nav class="bg-white border-b border-gray-200 fixed w-full z-10">
+    <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+      <a class="font-bold text-2xl text-indigo-600" href="./index.html">Jonathan Cohn</a>
+      <div class="hidden md:flex space-x-6">
+        <a href="./index.html" class="hover:text-indigo-600">Home</a>
+        <a href="./projects.html" class="hover:text-indigo-600">Portfolio</a>
+        <a href="./work.html" class="hover:text-indigo-600">Experience</a>
+        <a href="./writing.html" class="hover:text-indigo-600">Writing &amp; Books</a>
+        <a href="./about.html" class="hover:text-indigo-600">About &amp; Contact</a>
+      </div>
+      <div class="md:hidden">
+        <button id="menuButton" class="focus:outline-none" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileMenu">
+          <i class="fas fa-bars fa-lg"></i>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden">
+      <a href="./index.html" class="block px-4 py-2 hover:bg-gray-100">Home</a>
+      <a href="./projects.html" class="block px-4 py-2 hover:bg-gray-100">Portfolio</a>
+      <a href="./work.html" class="block px-4 py-2 hover:bg-gray-100">Experience</a>
+      <a href="./writing.html" class="block px-4 py-2 hover:bg-gray-100">Writing &amp; Books</a>
+      <a href="./about.html" class="block px-4 py-2 hover:bg-gray-100">About &amp; Contact</a>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <!-- About Section -->
+    <section class="container mx-auto py-24 px-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
+        <div class="md:col-span-2">
+          <h1 class="text-4xl font-bold mb-6">About</h1>
+          <p class="text-lg leading-relaxed mb-4">
+            I’m an AI Product Manager and documentation nerd who started in media studies and digital culture. I’ve spent the last two decades tracing how recommendation engines, interfaces, and workflows shape people’s choices—first as a researcher and professor, and now inside product teams building AI capabilities into PLM/QMS and research tools.
+          </p>
+          <p class="text-lg leading-relaxed mb-4">
+            I live in the Bay Area with my family, climb rocks for fun, and still get excited about great documentation, strange TV, and better ways to organize knowledge.
+          </p>
+        </div>
+        <div>
+          <div class="card p-6">
+            <h2 class="text-2xl font-semibold mb-4">Contact</h2>
+            <ul class="space-y-3 text-gray-800">
+              <li><a class="text-indigo-600 hover:underline" href="mailto:jacohn@gmail.com">Email</a></li>
+              <li><a class="text-indigo-600 hover:underline" href="https://www.linkedin.com/in/jonathan-cohn-phd/" target="_blank">LinkedIn</a></li>
+              <li><a class="text-indigo-600 hover:underline" href="https://github.com/jacohn" target="_blank">GitHub</a></li>
+              <li><a class="text-indigo-600 hover:underline" href="https://www.researchgate.net/profile/Jonathan-Cohn-2" target="_blank">Research</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-indigo-600 text-white py-6">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Jonathan Cohn</p>
+    </div>
+  </footer>
+
+  <!-- Mobile Menu Script -->
+  <script>
+    const menuButton = document.getElementById('menuButton');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    menuButton.addEventListener('click', () => {
+      const isHidden = mobileMenu.classList.toggle('hidden');
+      menuButton.setAttribute('aria-expanded', !isHidden);
+    });
+  </script>
+
+</body>
+</html>

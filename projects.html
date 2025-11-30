@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Projects | Jonathan Cohn</title>
+  <title>Portfolio | Jonathan Cohn</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Tailwind CSS -->
@@ -18,6 +18,7 @@
   <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
 </head>
 <body class="bg-white text-gray-800">
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
   <!-- Navigation -->
   <nav class="bg-white border-b border-gray-200 fixed w-full z-10">
@@ -25,13 +26,13 @@
       <a class="font-bold text-2xl text-indigo-600" href="./index.html">Jonathan Cohn</a>
       <div class="hidden md:flex space-x-6">
         <a href="./index.html" class="hover:text-indigo-600">Home</a>
-        <a href="./work.html" class="hover:text-indigo-600">Work</a>
-        <a href="./projects.html" class="hover:text-indigo-600">Projects</a>
-        <a href="https://youtu.be/x3s0fwBWOCc" target="_blank" class="hover:text-indigo-600">Video Intro</a>
-        <a href="mailto:jacohn@gmail.com" class="hover:text-indigo-600">Contact</a>
+        <a href="./projects.html" class="hover:text-indigo-600">Portfolio</a>
+        <a href="./work.html" class="hover:text-indigo-600">Experience</a>
+        <a href="./writing.html" class="hover:text-indigo-600">Writing &amp; Books</a>
+        <a href="./about.html" class="hover:text-indigo-600">About &amp; Contact</a>
       </div>
       <div class="md:hidden">
-        <button id="menuButton" class="focus:outline-none">
+        <button id="menuButton" class="focus:outline-none" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileMenu">
           <i class="fas fa-bars fa-lg"></i>
         </button>
       </div>
@@ -39,169 +40,107 @@
     <!-- Mobile Menu -->
     <div id="mobileMenu" class="hidden md:hidden">
       <a href="./index.html" class="block px-4 py-2 hover:bg-gray-100">Home</a>
-      <a href="./work.html" class="block px-4 py-2 hover:bg-gray-100">Work</a>
-      <a href="./projects.html" class="block px-4 py-2 hover:bg-gray-100">Projects</a>
-      <a href="https://youtu.be/x3s0fwBWOCc" target="_blank" class="block px-4 py-2 hover:bg-gray-100">Video Intro</a>
-      <a href="mailto:jacohn@gmail.com" class="block px-4 py-2 hover:bg-gray-100">Contact</a>
+      <a href="./projects.html" class="block px-4 py-2 hover:bg-gray-100">Portfolio</a>
+      <a href="./work.html" class="block px-4 py-2 hover:bg-gray-100">Experience</a>
+      <a href="./writing.html" class="block px-4 py-2 hover:bg-gray-100">Writing &amp; Books</a>
+      <a href="./about.html" class="block px-4 py-2 hover:bg-gray-100">About &amp; Contact</a>
     </div>
   </nav>
 
-  <!-- Projects Section -->
-  <section class="container mx-auto py-24 px-6">
-    <h1 class="text-4xl font-bold text-center mb-12">Technical Writing & Full Stack Coding Projects</h1>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <!-- Project 1: Arena PLM/QMS Documentation -->
-      <div class="bg-white rounded shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
-        <img alt="Arena PLM Platform" class="w-full h-48 object-cover" src="./images/arena.png">
-        <div class="p-6">
-          <h3 class="text-xl font-semibold mb-2">Arena PLM/QMS Documentation</h3>
-          <ul class="list-disc list-inside text-gray-700 mb-4">
-            <li>Utilized WalkMe, DITA XML, and SaaS platforms to create scalable documentation.</li>
-            <li>Developed in-app guides and UX writing for Arena Solutions.</li>
-            <li>Aided companies in manufacturing efficient, safe, and sustainable products.</li>
-            <li>Worked on localization and version control.</li>
-          </ul>
-          <a class="mt-4 inline-block text-indigo-600 hover:underline" href="https://www.arenasolutions.com/" target="_blank">View Project &rarr;</a>
-        </div>
+  <main id="main-content">
+    <!-- Portfolio Section -->
+    <section class="container mx-auto py-24 px-6">
+      <div class="text-center max-w-4xl mx-auto mb-12">
+        <h1 class="text-4xl font-bold mb-4">Portfolio</h1>
+        <p class="text-lg text-gray-700">I design, ship, and document AI-driven features and complex workflows. Below are selected projects; I’m happy to provide more detail or walk through any of these live.</p>
       </div>
-      <!-- Project 2: Empower PLM Documentation -->
-      <div class="bg-white rounded shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
-        <img alt="Empower PLM" class="w-full h-48 object-cover" src="./images/empower.png">
-        <div class="p-6">
-          <h3 class="text-xl font-semibold mb-2">Empower PLM Documentation</h3>
-          <ul class="list-disc list-inside text-gray-700 mb-4">
-            <li>Developed comprehensive API documentation and user guides using VuePress and Markdown.</li>
-            <li>Focused on release notes and onboarding materials.</li>
-            <li>Enhanced user understanding of Empower PLM software.</li>
-            <li>Collaborated with engineering teams to ensure accuracy.</li>
-          </ul>
-          <a class="mt-4 inline-block text-indigo-600 hover:underline" href="https://docs.omnifysoft.com/v850/GeneralHelpFiles/WhatsNew/OverviewofEmpower850.html" target="_blank">View Project &rarr;</a>
+
+    <!-- AI Product & Strategy -->
+    <div class="mb-16" id="ai-product">
+      <h2 class="text-2xl font-semibold mb-6">AI Product &amp; Strategy</h2>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div class="card overflow-hidden" id="arena-ai-assistant">
+          <img alt="Arena AI Assistant" class="w-full h-52 object-cover" src="./images/Arena.png">
+          <div class="p-6">
+            <p class="text-sm uppercase tracking-wide text-indigo-600 font-semibold mb-1">AI Product Manager – Arena PLM (PTC)</p>
+            <h3 class="text-xl font-semibold mb-3">Arena AI Assistant &amp; 3-Year AI Roadmap</h3>
+            <p class="text-gray-700 mb-3"><strong>Problem:</strong> PLM/QMS customers needed faster ways to navigate complex workflows while respecting permissions, regulatory requirements, and security.</p>
+            <p class="text-gray-700 mb-3"><strong>Role:</strong> Defined the 3-year AI roadmap; partnered with engineering, UX, and security on 0–1 features; collaborated with AWS/OpenAI/Anthropic; wrote prompts, gold datasets, eval criteria, and UX copy; co-authored AI principles and governance.</p>
+            <p class="text-gray-700 mb-3"><strong>Solution:</strong> Permission-aware Arena AI Assistant for items, changes, and quality processes using RAG over help docs and product data; companion features for file summary/comparison and AI suggestions.</p>
+            <p class="text-gray-700 mb-3"><strong>Impact:</strong> Shipped governed AI capabilities and clarified a multi-year roadmap for leadership and GTM.</p>
+            <a class="text-indigo-600 hover:underline" href="https://www.arenasolutions.com/blog/how-arenas-new-ai-assistant-empowers-plm-users-at-every-level/" target="_blank">Read how it works &rarr;</a>
+          </div>
         </div>
-      </div>
-      <!-- Project 3: AI Ethics Training at Google -->
-      <div class="bg-white rounded shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
-        <img alt="AI Ethics at Google" class="w-full h-48 object-cover" src="./images/scouts.png">
-        <div class="p-6">
-          <h3 class="text-xl font-semibold mb-2">AI Ethics Training at Google</h3>
-          <ul class="list-disc list-inside text-gray-700 mb-4">
-            <li>Created self-guided courses on AI ethics.</li>
-            <li>Promoted responsible AI practices among engineering teams.</li>
-            <li>Enhanced adoption of Google's GenAI product development process.</li>
-            <li>Collaborated with cross-functional teams.</li>
-          </ul>
-          <a class="mt-4 inline-block text-indigo-600 hover:underline" href="https://sites.research.google/scouts/#our-research" target="_blank">View Project &rarr;</a>
+        <div class="card overflow-hidden" id="ai-release-notes">
+          <img alt="AI Release Notes" class="w-full h-52 object-cover" src="./images/api.webp">
+          <div class="p-6">
+            <p class="text-sm uppercase tracking-wide text-indigo-600 font-semibold mb-1">Internal Tool – Arena PLM (PTC)</p>
+            <h3 class="text-xl font-semibold mb-3">AI Release Notes &amp; Docs Assistant</h3>
+            <p class="text-gray-700 mb-3"><strong>Problem:</strong> Release notes and help updates were time-consuming and relied on tribal knowledge.</p>
+            <p class="text-gray-700 mb-3"><strong>Role:</strong> Designed an AI program that reads code diffs and Jira tickets, drafts release notes, maps changes to help topics, and surfaces documentation gaps; owned prompts, gold data, and eval loops.</p>
+            <p class="text-gray-700 mb-3"><strong>Solution:</strong> Multi-step pipeline: ingest diffs and tickets → classify changes → draft user-friendly notes → map to help topics and suggest edits.</p>
+            <p class="text-gray-700 mb-3"><strong>Impact:</strong> Reduced manual drafting time, improved alignment between product, docs, and support, and created a reusable pattern for AI automation.</p>
+          </div>
         </div>
-      </div>
-      <!-- Project 4: API and SDK Guides -->
-      <div class="bg-white rounded shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
-        <img alt="API Documentation" class="w-full h-48 object-cover" src="./images/api.webp">
-        <div class="p-6">
-          <h3 class="text-xl font-semibold mb-2">API and SDK Guides</h3>
-          <ul class="list-disc list-inside text-gray-700 mb-4">
-            <li>Maintained comprehensive guides for <strong>Arena</strong> and <strong>Empower APIs</strong>.</li>
-            <li>Deep understanding of API and SDK documentation principles.</li>
-            <li>Developed API guides that reduced developer onboarding time by 30%.</li>
-            <li>Collaborated with engineers to keep documentation up-to-date across multiple API versions.</li>
-            <li>Structured content to maximize reuse and streamline the documentation process.</li>
-          </ul>
-          <a class="mt-4 inline-block text-indigo-600 hover:underline" href="https://docs.omnifysoft.com/v850/API_Guides/API_Guides.html" target="_blank">View Empower API Guides &rarr;</a><br>
-          <a class="mt-2 inline-block text-indigo-600 hover:underline" href="https://github.com/ptc-arena" target="_blank">View Arena API Guides &rarr;</a>
-        </div>
-      </div>
-      <!-- Project 5: DITA Documentation Portfolio -->
-      <div class="bg-white rounded shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
-        <img alt="DITA Documentation Portfolio" class="w-full h-48 object-cover" src="./images/projects.webp">
-        <div class="p-6">
-          <h3 class="text-xl font-semibold mb-2">DITA Documentation Portfolio</h3>
-          <ul class="list-disc list-inside text-gray-700 mb-4">
-            <li>Proficient in structured content management using <strong>DITA XML</strong>.</li>
-            <li>Applied modular writing techniques for adaptable and scalable documentation.</li>
-            <li>Implemented effective content reuse strategies for efficiency.</li>
-            <li>Developed procedural, conceptual, and reference-based documentation.</li>
-            <li>Utilized Oxygen XML Editor for DITA authoring.</li>
-            <li>Collaborated with SMEs to ensure technical accuracy.</li>
-            <li>Optimized information architecture for enhanced user experience.</li>
-          </ul>
-          <a class="mt-4 inline-block text-indigo-600 hover:underline" href="https://github.com/jacohn/UX-Tech-Doc-Portfolio/tree/main/DITA%20portfolio" target="_blank">View on GitHub &rarr;</a>
-        </div>
-      </div>
-      <!-- Project 6: API Documentation and Correspondence -->
-      <div class="bg-white rounded shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
-        <img alt="Code Documentation" class="w-full h-48 object-cover" src="./images/collaboration.webp">
-        <div class="p-6">
-          <h3 class="text-xl font-semibold mb-2">API Documentation and Correspondence</h3>
-          <ul class="list-disc list-inside text-gray-700 mb-4">
-            <li>Specialized in developer-focused technical writing.</li>
-            <li>Facilitated clear, professional communication across teams and external partners.</li>
-            <li>Documented complex API integrations, streamlining developer onboarding.</li>
-            <li>Used GitHub for collaborative documentation updates and version control.</li>
-            <li>Worked with engineers to ensure clarity and accuracy.</li>
-          </ul>
-          <a class="mt-4 inline-block text-indigo-600 hover:underline" href="https://github.com/jacohn/UX-Tech-Doc-Portfolio/blob/main/API_doc_correspondence.pdf" target="_blank">View PDF &rarr;</a>
-        </div>
-      </div>
-      <!-- Project 7: CohnCalc End-User Guide with DITA Implementation -->
-      <div class="bg-white rounded shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
-        <img alt="CohnCalc Guide" class="w-full h-48 object-cover" src="./images/calculator_dita.webp">
-        <div class="p-6">
-          <h3 class="text-xl font-semibold mb-2">CohnCalc End-User Guide with DITA Implementation</h3>
-          <ul class="list-disc list-inside text-gray-700 mb-4">
-            <li>Expertise in <strong>DITA XML</strong> authoring for modular content management.</li>
-            <li>Developed a user guide that reduced customer support inquiries by 25%.</li>
-            <li>Employed content reuse strategies, cutting documentation development time by 40%.</li>
-            <li>Conducted user testing to enhance the guide’s usability.</li>
-          </ul>
-          <a class="mt-4 inline-block text-indigo-600 hover:underline" href="https://github.com/jacohn/UX-Tech-Doc-Portfolio/tree/main/DITA%20portfolio" target="_blank">View DITA Input &rarr;</a><br>
-          <a class="mt-2 inline-block text-indigo-600 hover:underline" href="https://htmlpreview.github.io/?https://github.com/jacohn/DITA-XML-docu/blob/main/html5/index.html" target="_blank">View DITA Output &rarr;</a>
-        </div>
-      </div>
-      <!-- Project 8: Article on Privacy Legislation (VPPA) -->
-      <div class="bg-white rounded shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
-        <img alt="Privacy Legislation Article" class="w-full h-48 object-cover" src="./images/vhs-tape.webp">
-        <div class="p-6">
-          <h3 class="text-xl font-semibold mb-2">Article on Privacy Legislation (VPPA)</h3>
-          <ul class="list-disc list-inside text-gray-700 mb-4">
-            <li>Researched and wrote about digital privacy and security laws, focusing on VPPA.</li>
-            <li>Clarified the impact of VPPA on online privacy regulations for a broad audience.</li>
-            <li>Simplified legal and technical concepts, making them accessible to non-experts.</li>
-            <li>Collaborated with legal experts to ensure accuracy and engagement.</li>
-            <li>Contributed to discussions on digital privacy, influencing perspectives in tech media.</li>
-          </ul>
-          <a class="mt-4 inline-block text-indigo-600 hover:underline" href="https://www.salon.com/2019/08/04/online-viewer-privacy-is-regulated-by-an-act-originally-designed-to-protect-video-rentals_partner/" target="_blank">View Salon Article &rarr;</a>
-        </div>
-      </div>
-      <!-- Project 9: Breakfast Documentation Suite -->
-      <div class="bg-white rounded shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
-        <img alt="Breakfast Documentation" class="w-full h-48 object-cover" src="./images/breakfast.webp">
-        <div class="p-6">
-          <h3 class="text-xl font-semibold mb-2">Breakfast Documentation Suite</h3>
-          <ul class="list-disc list-inside text-gray-700 mb-4">
-            <li>Created versatile documentation across conceptual, procedural, and reference formats.</li>
-            <li>Delivered step-by-step instructions with clear conceptual explanations.</li>
-            <li>Demonstrated flexibility in adapting content to different formats and user needs.</li>
-            <li>Used <strong>Markdown</strong> for concise and effective documentation.</li>
-            <li>Enhanced the user experience with visual guides and accessible content.</li>
-            <li>Partnered with UX designers to ensure documentation accessibility and user engagement.</li>
-          </ul>
-          <a class="mt-4 inline-block text-indigo-600 hover:underline" href="https://github.com/jacohn/UX-Tech-Doc-Portfolio/tree/main/MD%20portfolio" target="_blank">View Files &rarr;</a>
-        </div>
-      </div>
-      <!-- Project 10: Ethics Bounty System Proposal -->
-      <div class="bg-white rounded shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
-        <img alt="Ethics Bounty System" class="w-full h-48 object-cover" src="./images/An-Ethics-Bounty-System-Could-Help-Clean-Up-the-Web.webp">
-        <div class="p-6">
-          <h3 class="text-xl font-semibold mb-2">Ethics Bounty System Proposal</h3>
-          <ul class="list-disc list-inside text-gray-700 mb-4">
-            <li>Proposed innovative solutions for ethical technology compliance.</li>
-            <li>Explored the intersection of ethics and technology with forward-thinking strategies.</li>
-            <li>Presented the proposal to cross-functional teams, fostering industry-wide discussions.</li>
-            <li>Collaborated with key stakeholders to refine the proposal.</li>
-          </ul>
-          <a class="mt-4 inline-block text-indigo-600 hover:underline" href="https://www.wired.com/story/big-tech-ethics-bug-bounty/" target="_blank">View Wired Article &rarr;</a>
+        <div class="card overflow-hidden" id="zelda-plm">
+          <img alt="Zelda PLM" class="w-full h-52 object-cover" src="./images/projects.jpg">
+          <div class="p-6">
+            <p class="text-sm uppercase tracking-wide text-indigo-600 font-semibold mb-1">Product Design</p>
+            <h3 class="text-xl font-semibold mb-3">Zelda PLM UX Sandbox</h3>
+            <p class="text-gray-700 mb-3"><strong>Problem:</strong> Traditional PLM UX can feel rigid and opaque for non-experts.</p>
+            <p class="text-gray-700 mb-3"><strong>Role:</strong> Designed a Zelda-inspired PLM prototype that turns inventory, quests, and workflows into an intuitive product knowledge system.</p>
+            <p class="text-gray-700 mb-3"><strong>Solution:</strong> Playful UI that maps items, changes, and quests to PLM concepts, showing how narrative and visual metaphors can clarify complex workflows.</p>
+            <p class="text-gray-700 mb-3"><strong>Impact:</strong> Demonstrates UX-first thinking for PLM/enterprise tools; sparks conversations on how to make regulated workflows approachable.</p>
+            <a class="text-indigo-600 hover:underline" href="https://jacohn.github.io/zelda-plm/" target="_blank">View live &rarr;</a>
+          </div>
         </div>
       </div>
     </div>
-  </section>
+
+    <!-- Developer Docs & Help Systems -->
+    <div class="mb-16" id="docs-help">
+      <h2 class="text-2xl font-semibold mb-6">Developer Docs &amp; Help Systems</h2>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div class="card overflow-hidden">
+          <img alt="API Modernization" class="w-full h-52 object-cover" src="./images/collaboration.webp">
+          <div class="p-6">
+            <p class="text-sm uppercase tracking-wide text-indigo-600 font-semibold mb-1">Technical Writer → AI PM – Arena PLM</p>
+            <h3 class="text-xl font-semibold mb-3">Arena API &amp; Developer Help Center</h3>
+            <p class="text-gray-700 mb-3"><strong>Problem:</strong> Fragmented docs and inconsistent API semantics slowed integrations.</p>
+            <p class="text-gray-700 mb-3"><strong>Role:</strong> Led migration from legacy DITA to web help; wrote API reference and conceptual guides; modernized APIs toward OpenAPI; owned in-app guidance via WalkMe.</p>
+            <p class="text-gray-700 mb-3"><strong>Impact:</strong> Shorter onboarding, reduced support back-and-forth, and a strong base for AI-powered search/assistants over docs.</p>
+          </div>
+        </div>
+        <div class="card overflow-hidden">
+          <img alt="Release notes and onboarding" class="w-full h-52 object-cover" src="./images/empower.png">
+          <div class="p-6">
+            <p class="text-sm uppercase tracking-wide text-indigo-600 font-semibold mb-1">Product Team – Arena/Empower PLM</p>
+            <h3 class="text-xl font-semibold mb-3">Empower PLM Documentation &amp; Release Notes</h3>
+            <p class="text-gray-700 mb-3"><strong>Problem:</strong> Users needed clearer onboarding and release transparency across PLM/QMS.</p>
+            <p class="text-gray-700 mb-3"><strong>Role:</strong> Developed API docs, tutorials, and release notes; structured content for reuse and localization; aligned terminology across UI and docs.</p>
+            <p class="text-gray-700 mb-3"><strong>Impact:</strong> Better onboarding and consistent releases, setting up future AI-driven doc surfacing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Courses & Learning -->
+    <div id="learning">
+      <h2 class="text-2xl font-semibold mb-6">Courses &amp; Learning Experiences</h2>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div class="card overflow-hidden">
+          <img alt="Responsible AI training" class="w-full h-52 object-cover" src="./images/scouts.png">
+          <div class="p-6">
+            <p class="text-sm uppercase tracking-wide text-indigo-600 font-semibold mb-1">Instructional Designer &amp; AI Ethics SME – Google</p>
+            <h3 class="text-xl font-semibold mb-3">AI Ethics &amp; Responsible Deployment Training</h3>
+            <p class="text-gray-700 mb-3"><strong>Problem:</strong> Engineering teams needed practical, scenario-based training on ethical AI.</p>
+            <p class="text-gray-700 mb-3"><strong>Role:</strong> Designed self-paced modules and live content; translated principles into engineering decisions; collaborated with research, legal, and product.</p>
+            <p class="text-gray-700 mb-3"><strong>Solution &amp; Impact:</strong> Training that helped teams apply fairness, transparency, and accountability to real projects.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <!-- Footer -->
   <footer class="bg-indigo-600 text-white py-6">
@@ -216,7 +155,8 @@
     const mobileMenu = document.getElementById('mobileMenu');
 
     menuButton.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
+      const isHidden = mobileMenu.classList.toggle('hidden');
+      menuButton.setAttribute('aria-expanded', !isHidden);
     });
   </script>
 
